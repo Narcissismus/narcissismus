@@ -1,32 +1,16 @@
 [
   {
-    "date": "2026-07-05",
-    "title": "I Could Never Love You",
-    "type": "Single",
-    "release_date": "July, 2026",
-    "duration": "4:12",
+    "date": "",
+    "title": "",
+    "type": "",
+    "release_date": "",
+    "duration": "",
     "copies": "",
-    "cover": "images/i-could-never-love-you.jpg",
+    "cover": "",
     "tracks": [
-      "I Could Never Love You"
+      ""
     ],
-    "download": "downloads/narcissismus-i-could-never-love-you.zip",
+    "download": "
     "new": true
   },
-  {
-    "date": "2026-07-01",
-    "title": "Demo I",
-    "type": "Demo",
-    "release_date": "July, 2026",
-    "duration": "18:40",
-    "copies": "",
-    "cover": "images/example-release-1.jpg",
-    "tracks": [
-      "Intro",
-      "Demo Track I",
-      "Demo Track II"
-    ],
-    "download": "downloads/narcissismus-demo-i.zip",
-    "new": false
-  }
 ]
