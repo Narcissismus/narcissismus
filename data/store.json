@@ -1,20 +1,12 @@
 [
   {
-    "id": "demo-i-cd",
-    "title": "Demo I",
-    "format": "CD-R, limited edition",
-    "price": "8 EUR + shipping",
-    "cover": "images/example-release-1.jpg",
-    "status": "instock",
-    "note": "33 copies"
-  },
-  {
-    "id": "example-soldout",
-    "title": "example — sold out",
-    "format": "CD, jewel case",
-    "price": "10 EUR + shipping",
+    "id": "",
+    "title": "",
+    "format": "",
+    "price": "",
     "cover": "",
-    "status": "soldout",
-    "note": "batch is gone"
-  }
+    "status": "",
+    "note": ""
+  },
+
 ]
