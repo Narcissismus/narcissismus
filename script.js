@@ -1,7 +1,7 @@
 /* NARCISSISMUS — script.js
    no frameworks. old fashioned fetch + string building. */
 
-var CONTACT_EMAIL = "narcissismus@example.com"; // <-- change to your real email
+var CONTACT_EMAIL = "nnarcissismus@gmail.com"; // <-- change to your real email
 
 function escapeHtml(str) {
   if (!str) return "";
