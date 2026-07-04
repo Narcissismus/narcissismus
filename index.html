@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NARCISSISMUS</title>
+<meta name="description" content="Narcissismus - underground black metal / DSBM solo project">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="wrap">
+
+  <div class="logo-banner">
+    <img src="assets/logo.png" alt="Narcissismus">
+    <div class="subtitle">black metal</div>
+  </div>
+
+  <div class="marquee-line">
+    &raquo; official page &laquo; &nbsp;|&nbsp; best viewed in an old browser &nbsp;|&nbsp; <span class="blink">updated irregularly</span>
+  </div>
+
+  <nav class="oldnav">
+    [<a href="index.html">home</a>]
+    [<a href="news.html">news</a>]
+    [<a href="releases.html">releases</a>]
+    [<a href="store.html">store</a>]
+    [<a href="info.html">info</a>]
+    [<a href="lyrics.html">lyrics</a>]
+    [<a href="etc.html">etc</a>]
+  </nav>
+
+  <div class="section">
+    <h2>about</h2>
+    <p>
+      NARCISSISMUS — underground black metal / DSBM solo project.<br>
+      news, demos, albums and limited CDs will appear here.
+      no unnecessary information, only what matters.
+    </p>
+    <p>
+      contact: <a href="mailto:narcissismus@example.com">narcissismus@example.com</a>
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>latest news</h2>
+    <div id="news-preview">loading...</div>
+    <p style="text-align:right;"><a href="news.html">&raquo; all news</a></p>
+  </div>
+
+  <div class="section">
+    <h2>latest release</h2>
+    <div id="release-preview">loading...</div>
+    <p style="text-align:right;"><a href="releases.html">&raquo; all releases</a></p>
+  </div>
+
+  <div class="center" style="margin-top:10px;">
+    <span class="counter">visitors: 000666</span>
+  </div>
+
+  <footer class="oldfooter">
+    &copy; NARCISSISMUS. all rights reserved / all rights ignored.<br>
+    site hosted on github pages.
+  </footer>
+
+</div>
+
+
+<script src="script.js"></script>
+<script>
+  loadJSON("data/news.json", function (data) {
+    renderNews(data, "news-preview", 2);
+  });
+  loadJSON("data/releases.json", function (data) {
+    renderReleases(data.slice(0, 1), "release-preview");
+  });
+</script>
+
+</body>
+</html>

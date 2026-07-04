@@ -1,0 +1,326 @@
+/* NARCISSISMUS — style.css
+   old html, no fancy stuff. black and white only. */
+
+body {
+  background-color: #000000;
+  color: #c0c0c0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+/* fixed-width "page" like the old days, centered on a black void */
+#wrap {
+  width: 700px;
+  margin: 0 auto;
+  padding: 10px 0 40px 0;
+}
+
+a {
+  color: #a0a0a0;
+  text-decoration: underline;
+}
+a:visited {
+  color: #6a6a6a;
+}
+a:hover {
+  color: #ffffff;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #222222;
+  margin: 18px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.logo-banner {
+  text-align: center;
+  padding: 18px 0 6px 0;
+}
+.logo-banner img {
+  max-width: 90%;
+  filter: contrast(1.1) grayscale(1);
+}
+
+.subtitle {
+  text-align: center;
+  color: #777777;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: -4px;
+}
+
+nav.oldnav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 10px 0 22px 0;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+nav.oldnav a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: #b0b0b0;
+}
+nav.oldnav a:hover {
+  color: #ffffff;
+}
+
+.marquee-line {
+  color: #777777;
+  font-size: 11px;
+  text-align: center;
+  padding: 4px 0 14px 0;
+}
+
+/* section = replaces the old boxed .box, no border/background, just
+   generous spacing and a plain heading */
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  font-size: 14px;
+  color: #cccccc;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+.section h2::before {
+  content: "// ";
+  color: #555555;
+}
+
+.entry {
+  padding: 12px 0;
+  border-bottom: 1px solid #1a1a1a;
+}
+.entry:last-child {
+  border-bottom: none;
+}
+
+.entry .date {
+  color: #666666;
+  font-size: 11px;
+  font-family: "Courier New", monospace;
+}
+
+.entry .title {
+  color: #e0e0e0;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 2px 0 4px 0;
+}
+
+.entry img.entry-photo {
+  max-width: 100%;
+  filter: grayscale(1) contrast(1.1);
+  margin-top: 8px;
+}
+
+.tag-new {
+  color: #000000;
+  background-color: #b0b0b0;
+  font-size: 10px;
+  padding: 0 4px;
+  margin-left: 6px;
+  font-family: "Courier New", monospace;
+}
+
+.status-instock {
+  color: #9fdca0;
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+}
+.status-soldout {
+  color: #d98a8a;
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  text-decoration: line-through;
+}
+.status-low {
+  color: #d9c48a;
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+}
+
+/* ---------- releases ---------- */
+.release-item {
+  display: flex;
+  gap: 20px;
+  padding: 22px 0;
+  border-bottom: 1px solid #1a1a1a;
+  align-items: flex-start;
+}
+.release-item:last-child {
+  border-bottom: none;
+}
+
+.release-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.release-title {
+  color: #f0f0f0;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.release-meta {
+  font-size: 13px;
+  color: #999999;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.release-meta div {
+  margin: 0;
+}
+
+.release-tracklist {
+  list-style: none;
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 13px;
+  color: #b5b5b5;
+  line-height: 1.6;
+}
+.release-tracklist li {
+  counter-increment: track;
+}
+.release-tracklist li::before {
+  content: counter(track) ". ";
+  color: #666666;
+}
+.release-tracklist {
+  counter-reset: track;
+}
+
+.release-cover {
+  flex-shrink: 0;
+  width: 180px;
+}
+.release-cover img {
+  width: 100%;
+  display: block;
+  filter: grayscale(1);
+}
+
+.links-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.9;
+}
+.links-list li::before {
+  content: "> ";
+  color: #555555;
+}
+
+.lyrics-text {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 13px;
+  color: #b5b5b5;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  margin: 6px 0 0 0;
+}
+
+/* ---------- CD store ---------- */
+.cd-item {
+  display: flex;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid #1a1a1a;
+  align-items: flex-start;
+}
+.cd-item:last-child {
+  border-bottom: none;
+}
+.cd-item img {
+  width: 120px;
+  flex-shrink: 0;
+  filter: grayscale(1);
+}
+.cd-item .cd-info {
+  flex: 1;
+  min-width: 0;
+}
+.cd-item .cd-title {
+  font-weight: bold;
+  color: #e0e0e0;
+  font-size: 14px;
+}
+.cd-item .price {
+  color: #cccccc;
+  font-family: "Courier New", monospace;
+}
+
+.buy-button {
+  display: inline-block;
+  color: #a0a0a0;
+  text-decoration: underline;
+  font-size: 13px;
+  margin-top: 6px;
+}
+.buy-button:hover {
+  color: #ffffff;
+}
+.buy-button.disabled {
+  color: #555555;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.download-link {
+  display: inline-block;
+  color: #a0a0a0;
+  text-decoration: underline;
+  font-size: 13px;
+  font-family: "Courier New", monospace;
+}
+.download-link:hover {
+  color: #ffffff;
+}
+
+footer.oldfooter {
+  text-align: center;
+  color: #555555;
+  font-size: 11px;
+  padding-top: 16px;
+  margin-top: 30px;
+  border-top: 1px solid #1a1a1a;
+}
+
+.counter {
+  font-family: "Courier New", monospace;
+  color: #666666;
+  font-size: 11px;
+}
+
+.blink {
+  animation: blink 1.4s steps(2, start) infinite;
+}
+@keyframes blink {
+  to { visibility: hidden; }
+}
+
+::selection {
+  background: #ffffff;
+  color: #000000;
+}
+
+@media (max-width: 480px) {
+  #wrap { width: 100%; padding: 10px 14px 40px 14px; box-sizing: border-box; }
+  .release-item, .cd-item { flex-direction: column; }
+  .release-cover, .cd-item img { width: 140px; }
+}

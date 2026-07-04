@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NARCISSISMUS — etc</title>
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="wrap">
+
+  <div class="logo-banner">
+    <img src="assets/logo.png" alt="Narcissismus">
+    <div class="subtitle">black metal</div>
+  </div>
+
+  <nav class="oldnav">
+    [<a href="index.html">home</a>]
+    [<a href="news.html">news</a>]
+    [<a href="releases.html">releases</a>]
+    [<a href="store.html">store</a>]
+    [<a href="info.html">info</a>]
+    [<a href="lyrics.html">lyrics</a>]
+    [<a href="etc.html">etc</a>]
+  </nav>
+
+  <div class="section">
+    <h2>etc</h2>
+    <p style="font-size:12px;color:#888;">photos, notes, anything that doesn't fit elsewhere.</p>
+    <div id="etc-list">loading...</div>
+  </div>
+
+  <footer class="oldfooter">
+    &copy; NARCISSISMUS.
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+  loadJSON("data/etc.json", function (data) {
+    renderEtc(data, "etc-list");
+  });
+</script>
+
+</body>
+</html>
