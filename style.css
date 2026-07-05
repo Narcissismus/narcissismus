@@ -323,4 +323,12 @@ footer.oldfooter {
   #wrap { width: 100%; padding: 10px 14px 40px 14px; box-sizing: border-box; }
   .release-item, .cd-item { flex-direction: column; }
   .release-cover, .cd-item img { width: 140px; }
+   
+.chain-divider {
+  height: 26px;
+  background-image: url("assets/chain-tile.gif");
+  background-repeat: repeat-x;
+  background-position: center;
+  margin: 18px 0;
+}
 }
