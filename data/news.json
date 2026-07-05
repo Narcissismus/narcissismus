@@ -11,6 +11,13 @@
     "title": "Site is created, and will be used much more than telegram channel",
     "text": "Here will be posted photos of process, album covers and other spoilers, that you will see in categoties like liryc,etc and news.",
     "image": "images/photo_2026-07-05_11-16-47.jpg",
+    "new": false
+  },
+  {
+    "date": "2026-07-06",
+    "title": "Album is almost done",
+    "text": "Only vocals are missing in one song, and autro.",
+    "image": "",
     "new": true
-  }
+  },
 ]
