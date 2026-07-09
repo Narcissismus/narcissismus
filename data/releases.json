@@ -1,16 +1,22 @@
 [
   {
-    "date": "",
-    "title": "",
-    "type": "",
-    "release_date": "",
-    "duration": "",
-    "copies": "",
-    "cover": "",
+    "date": "2026-07-09",
+    "title": "Narcissismus",
+    "type": "Full Length",
+    "release_date": "July, 2026",
+    "duration": "16:48",
+    "copies": "0 copies",
+    "cover": "images/Album Cover.jpg",
     "tracks": [
-      ""
+      "1. Along the Pines Weeping Under His Grim Stare",
+      "2. Wall",
+      "3. Porcupine's Dilemma",
+      "4. Never Meant To Be",
+      "5. Narcissismus",
+      "6. Face That Never Exsisted (Philosophical Suicide)",
+      "7. Echo Of Death"
     ],
-    "download": "
+    "download": "downloads/Narcissismus - Narcissismus(Album).zip",
     "new": true
-  },
+}
 ]
