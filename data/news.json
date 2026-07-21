@@ -18,6 +18,13 @@
     "title": "Album is released on Bandcamp and on the website.",
     "text": "Please, give it a try. Bandcamp: https://narcissismus.bandcamp.com/album/narcissismus",
     "image": "images/Album Cover (2).jpg",
+    "new": false
+  },
+  {
+    "date": "2026-07-21",
+    "title": "Cover for future Full Lenght album",
+    "text": "It will be called Ispoved, or something else",
+    "image": "photo_2026-07-20_19-35-57.jpg",
     "new": true
   }
 ]
